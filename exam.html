@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>     <html class="no-js ie"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Cache-Control" content="no-cache">-->
+
+    <title>Sistemas Ciberfísicos</title>
+
+   <!-- <link rel="icon" type="image/png" href="https://www.wix.com/favicon.ico">-->
+
+    <!--<script src="//static.parastorage.com/services/cookie-consent-policy-client/1.224.0/app.bundle.min.js"></script>
+    <script src="//static.parastorage.com/services/tag-manager-client/1.186.0/hostTags.bundle.min.js"></script>-->
+    <!--<script>
+        if (window.consentPolicyManager) {
+            window.consentPolicyManager.init({
+                baseUrl: window.location.origin,
+                consentPolicy: { "functional": true, "analytics": true, "advertising": true, "dataToThirdParty": true, "essential": true }
+            });
+        }
+    </script>
+    <script>
+        if (window.wixTagManager) {
+            window.wixTagManager.init(window.wixTagManager.HOST_NAMES.EDITOR, 'es');
+        }
+    </script>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-MDD5C4');</script>
+    <script
+        id="sentry">(function (c, t, u, n, p, l, y, z, v) {
+                function e(b) { if (!w) { w = !0; var d = t.getElementsByTagName(u)[0], a = t.createElement(u); a.src = z; a.crossorigin = "anonymous"; a.addEventListener("load", function () { try { c[n] = q; c[p] = r; var a = c[l], d = a.init; a.init = function (a) { for (var b in a) Object.prototype.hasOwnProperty.call(a, b) && (v[b] = a[b]); d(v) }; B(b, a) } catch (A) { console.error(A) } }); d.parentNode.insertBefore(a, d) } } function B(b, d) {
+                    try {
+                        for (var a = 0; a < b.length; a++)if ("function" === typeof b[a]) b[a](); var f = m.data, g = !1, h = !1; for (a = 0; a < f.length; a++)if (f[a].f) {
+                            h =
+                            !0; var e = f[a]; !1 === g && "init" !== e.f && d.init(); g = !0; d[e.f].apply(d, e.a)
+                        } !1 === h && d.init(); var k = c[n], l = c[p]; for (a = 0; a < f.length; a++)f[a].e && k ? k.apply(c, f[a].e) : f[a].p && l && l.apply(c, [f[a].p])
+                    } catch (C) { console.error(C) }
+                } for (var g = !0, x = !1, k = 0; k < document.scripts.length; k++)if (-1 < document.scripts[k].src.indexOf(y)) { g = "no" !== document.scripts[k].getAttribute("data-lazy"); break } var w = !1, h = [], m = function (b) { (b.e || b.p || b.f && -1 < b.f.indexOf("capture") || b.f && -1 < b.f.indexOf("showReportDialog")) && g && e(h); m.data.push(b) };
+                m.data = []; c[l] = { onLoad: function (b) { h.push(b); g && !x || e(h) }, forceLoad: function () { x = !0; g && setTimeout(function () { e(h) }) } }; "init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function (b) { c[l][b] = function () { m({ f: b, a: arguments }) } }); var q = c[n]; c[n] = function (b, d, a, f, e) { m({ e: [].slice.call(arguments) }); q && q.apply(c, arguments) }; var r = c[p]; c[p] = function (b) { m({ p: b.reason }); r && r.apply(c, arguments) }; g || setTimeout(function () { e(h) })
+            })(window, document,
+                "script", "onerror", "onunhandledrejection", "Sentry", "c2379ecfcd16477d998f2f07532d6f32", "https://browser.sentry-cdn.com/5.5.0/bundle.min.js", { "dsn": "https://c2379ecfcd16477d998f2f07532d6f32@sentry.wixpress.com/17" });</script>
+    <script type="text/javascript">
+        (function () {
+            function sendBeacon(url) {
+                var sent = false
+                try {
+                    sent = navigator.sendBeacon(url)
+                } catch (e) {
+                }
+                if (!sent) {
+                    (new Image()).src = url
+                }
+            }
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var origin = 'bolt';
+            var fedOpsAppName = 'santa-editor';
+            var editTypeToReport = 'none';
+            var editorSessionIdForFedsOps = '92037854-0249-4ac1-ae0d-1d6256107e61';
+            var fedopsParams = '&msid=55f69f1b-f78b-43cb-a93e-5bbc8357313c&uuid=bf976ae7-fd7e-4267-94a8-59a38bd68bf9';
+            var is_rollout = 0;
+
+            window.fedops = window.fedops || {};
+            window.fedops.apps = window.fedops.apps || {};
+            window.fedops.apps[fedOpsAppName] = { startLoadTime: window.performance && window.performance.now && window.performance.now() };
+
+            window.loggerModel = {
+                is_rollout: is_rollout,
+                origin: origin,
+                editorSessionId: editorSessionIdForFedsOps,
+                fedOpsAppName: fedOpsAppName
+            };
+            var url = '//frog.wix.com/editor-performance?src=72&evid=41&appName=' + fedOpsAppName +
+                '&is_rollout=' + is_rollout + '&origin=' + origin +
+                '&session_id=' + editorSessionIdForFedsOps + '&type=' + editTypeToReport +
+                fedopsParams;
+            sendBeacon(url);
+        })();
+    </script>-->
+   <!-- <link rel="stylesheet"
+        href="https://static.parastorage.com/services/santa-editor/1.11313.0/cssCache/packages/rEditor/src/main/editor.css"
+        type="text/css" />
+    <script src="https://static.parastorage.com/unpkg-semver/wix-recorder@^1/app.bundle.min.js"></script>
+    <script type="text/javascript">
+        var debugMode = "nodebug";
+        var siteId = 'b8add388-bc94-42d6-982f-86903e6272f3';
+
+        var siteHeader = { "id": "b8add388-bc94-42d6-982f-86903e6272f3", "userId": "bf976ae7-fd7e-4267-94a8-59a38bd68bf9", "revision": 4, "version": 1602508758730, "applicationType": "HtmlWeb", "documentType": "document", "published": false, "pageIdList": { "masterPageJsonFileName": "bf976a_a622c8ec0e0ca8fdb1615ae7b12798a5_4.json", "topology": ["https:\/\/static.wix.com\/sites\/{filename}.z?v=3", "https:\/\/fallback.wix.com\/wix-html-editor-pages-webapp\/pageForEditor\/{filename}?v=3"], "pages": [{ "pageId": "c1u7g", "title": "PROYECTO 9", "pageJsonFileName": "bf976a_72c5929046d17a1567e8b38564dadb56_1.json" }, { "pageId": "cbeq", "title": "PROYECTO 5", "pageJsonFileName": "bf976a_2a00d39b46181c81bd6f210989f54d05_1.json" }, { "pageId": "c1mqf", "title": "PROYECTO 1", "pageJsonFileName": "bf976a_a0b87d890b45d332d71bb24508543708_1.json" }, { "pageId": "cmyn", "title": "MATERIALES", "pageJsonFileName": "bf976a_39f8f88254ddb2a21c256b9a80843715_4.json" }, { "pageId": "cqol", "title": "PROYECTO 2", "pageJsonFileName": "bf976a_1279a75b8c95f151431205e5990a8f3d_1.json" }, { "pageId": "cjg9", "title": "PRUEBAS", "pageJsonFileName": "bf976a_8ca141104ab48814d02182860215e2b8_4.json" }, { "pageId": "c1208", "title": "PROYECTO 7", "pageJsonFileName": "bf976a_ba0da54c784f76d7c3ff3c8055bfc184_1.json" }, { "pageId": "oelyv", "title": "Fullscreen Page", "pageJsonFileName": "bf976a_c2dbc4b5f033b82a9d71b889a6829406_1.json" }, { "pageId": "c298", "title": "PROYECTO 3", "pageJsonFileName": "bf976a_489bcc50ebff9f43202a3a5ec8a05a9c_1.json" }, { "pageId": "c1n22", "title": "PROYECTO 8", "pageJsonFileName": "bf976a_70a83f48dfb6f93310b8dd0768c1d599_1.json" }, { "pageId": "c7xw", "title": "PROYECTO 4", "pageJsonFileName": "bf976a_f7e137d7ccf78dba83bd5d993bd5fe75_1.json" }, { "pageId": "c1cnt", "title": "PROYECTO 6", "pageJsonFileName": "bf976a_b1b8ee4972d9a6c0b2af168e28485841_1.json" }, { "pageId": "ngww0", "title": "Post", "pageJsonFileName": "bf976a_7b7b244156db974538ad63f9c4b1560c_3.json" }, { "pageId": "zv8xp", "title": "SOFTWARE", "pageJsonFileName": "bf976a_767add0bf79ede3462d1c4f049cd8c59_4.json" }, { "pageId": "c1rez", "title": "INICIO", "pageJsonFileName": "bf976a_722dd645ba8516c6ea33eae2bed11d3b_4.json" }] }, "originalTemplateId": "57b6346e-a5b3-4cf2-aa76-e883e7cbc53c" };;
+        var editorVersionsInfo = { "userOverride": "none", "isEligibleForSwitch": false, "isNewUser": true };
+        var commonConfig = { "brand": "wix" }; var shiftedFromHtmlToNewEditor = false;
+    </script>
+</head>-->
+
+<body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDD5C4" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <div id="video-preloader" class="video-preloader">
+        <video id="editor-video-preloader" width=320 height=320
+            poster="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" loop autoplay
+            muted=true></video>
+        <script>
+            // editor assets serving domain
+            var videoUrl = "https://editorassets.parastorage.com/video-preloader/editor/v2/";
+            var videoName = "video-preloader-" + Math.floor((Math.random() * 5) + 1);
+            var videoElement = document.getElementById('editor-video-preloader');
+            var devicePixelRatio = window.devicePixelRatio || window.screen.deviceXDPI / window.screen.logicalXDPI;
+            var retinaSuffix = devicePixelRatio >= 2 ? "-@2x" : "";
+            videoElement.src = videoUrl + videoName + retinaSuffix + ".mp4";
+            videoElement.load();
+        </script>
+    </div>
+    <div id="root"></div>
+    <script type="text/javascript">
+        var santaBase = 'https://static.parastorage.com/services/santa/1.11775.0';
+        var editorBase = 'https://static.parastorage.com/services/santa-editor/1.11313.0';
+        var editorVersionSource = 'production';
+    </script>
+
+    <script src="https://static.parastorage.com/services/third-party/requirejs/2.1.15/require.min.js"></script>
+    <script
+        src="https://static.parastorage.com/polyfill/v2/polyfill.min.js?features=es2015,es2016,es2017,fetch&flags=gated&unknown=polyfill&rum=0"></script>
+    <script src="https://static.parastorage.com/services/santa-editor/1.11313.0/dist/bundle/main.min.js"></script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-2117194-1']);
+        _gaq.push(['_setDomainName', '.wix.com']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Proyecto de curso: carro inteligente evita obstaculos.">
+    <meta name="keywords" content="HTML5">
+    <title>sistemas ciberfísicos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        p {font-size: 20px}
+    </style>
+</head>
+
+<body>
+    <div id="agrupar">
+        <header id="cabecera">
+            <h1>PROYECTO SISTEMAS CIBERFÍSICOS</h1>
+        <nav id="menu">
+            <ul class="horizontal">
+                <li><a href="fisicos.html">inicio</a></li>
+                <li><a href="materiales.html">materiales</a></li>
+                <li><a href="software.html">software</a></li>
+                <li><a href="codigo.html">código</a></li>
+                <li><a href="galería.html">galeria</a></li>
+                <li><a href="control.html">control</a></li>
+                <li><a href="creditos.html">creditos</a></li>
+            </ul>
+        </nav>
+        </header>
+        <section id="seccion">
+            <article>
+                <header>
+                    <hgroup>
+                        <h2>
+                            <p style="font-size: 30px">SOFTWARE REQUERIDO PARA PROGRAMAR SITIO WEB</p></br>
+                        </h2>
+                        <!-- <h4>Subsubtitulo</h4>-->
+                    </hgroup>
+                </header>
+                <h3>
+                    <p>HTML5</p></br>
+                </h3>
+                <figure id="figura">
+                    <img src="data:image/png;base64,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">
+            </figure></br></br>
+            <p id="texto2">HTML5 (HyperText Markup Language, versión 5) es la quinta revisión del lenguaje HTML. Esta nueva versión, y en conjunto con CSS3, define los nuevos estándares
+                de desarrollo web, rediseñando el código para resolver problemas y actualizándolo así a nuevas necesidades. No se limita solo a crear nuevas etiquetas o atributos, sino que incorpora
+                muchas características nuevas y proporciona una plataforma de desarrollo de complejas aplicaciones web (mediante los APIs).</br></br>
+
+HTML5 está destinado a sustituir no sólo HTML 4, sino también XHTML 1 y DOM Nivel 2. Esta versión nos permite una mayor interacción entre nuestras páginas web y el contenido media
+(video, audio, entre otros) así como una mayor facilidad a la hora de codificar nuestro diseño básico.</br></br>
+
+Algunas de las nuevas características de HTML5 serían:</br></br>
+
+Nuevas etiquetas semánticas para estructurar los documentos HTML, destinadas a remplazar la necesidad de tener una etiqueta _div_ que identifique cada bloque de la página.
+Los nuevos elementos multimedia como _audio_ y _video_.
+La integración de gráficos vectoriales escalables (SVG) en sustitución de los genéricos _object_, y un nuevo elemento _canvas_ que nos permite dibujar en él.
+El cambio, redefinición o estandarización de algunos elementos, como _a_, _cite_ o _menu_.
+MathML para fórmulas matemáticas.
+Almacenamiento local en el lado del cliente.
+Y otros muchos nuevos APIs que veremos a lo largo de los siguientes capítulos.</p></br>
+                <h4>
+                    <p>CSS3</p></br>
+                </h4>
+                <figure id="figura"> <img
+                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEQDg8PEBEQEA8QFhUQEBIPFhYPDxUQFhUXFhYRFRUYHzQgGBolGxUVITEiMSkrLjAuFx8zODMuNygtLisBCgoKDg0OGhAQGzAlHyUtLS0tLS0zKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBEQACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcEBQIDCAH/xABHEAACAQMABAYNCgUDBQAAAAAAAQIDBBEFEiGRBgcTMVFSFSJBVGFxgZKTocHR0hYXIzIzQmKiscIUU1WUsjV04QgkY3KC/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAQFAQMGAv/EACsRAQACAgAFAgcBAQADAAAAAAABAgMRBAUTMVEhMhIVIiNBYXGBFFJTkf/aAAwDAQACEQMRAD8AvEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB1XVzClTlVqzhTpwWtOdRqEIxXO5SexIDTfLTRf9RsP7ij8QD5aaL/qNh/cUfiA3lKopRUotSjJKUXF5TT2pp91AaWpwx0bGTjLSFjGUW4yUrikmpLY005bGBx+Wmi/6jYf3FH4gNtYXtKvTjWoVKdalPOrUpSVSnLDcXiUdjw015AMLSHCSxt6jpXF5aUKiSbhWrU6c8PmerJ5Axvlpov8AqNh/cUfiAzdF6ctLpyVtc29w4Yc1QqQquKfM3qvZzAbEAAAAAAAAAAAAAAAAAAAAAAAAAAI1xl/6JpL/AG9T/EDyZozR1W5rQoUKcqtaplQhH6zaTk8eRN+QCQfNtpjvC43R94HqzQ1NwtbaEk4yjSpxknzqSgk0wPHnCijKF/eRnFxkq9XMZJprM5NbH4AOWg+DV5fKbtKE6/J41+Tw3HPNlN+BgeoOKnR1a20JZW9xTlSrU1VU4T+ss16klnHSmn5QKT/6gKMlpuUnFqM6NJwbWFLCaeH3cMCA6J0XWu60aFvTdWtLLjCONZ4WXjPPsAvTiF4MXtjWvnd29SgqkKSg6iSUmpSylh+FAXGAAAAAAAAAAAAAAAAAAAAAAAAAAEa4y/8ARNJf7ep/iB5n4ttLUbPS9ndXE9ShSlNzkk5tJ0pxXaxWXtaA9AfPDoXvuXoK/wAAE5tq0alOFSDzCcVOL5sxksp4fgYFFcbelNBaRVSULnktJW+aalyNbVqajadGo1DHPnEu54gKr4McIbjR11TuraWrOGxxf1JwfPTmu7F/8ragPW3BPTsNIWNve04yhGvFvUltcZRk4Sjnu9tF7e6BDuNPTGhasZ6O0lWlSrxSqU5xpVKk6UpLtZxlGOH4V3QPNtdKlWfI1ddU5Zp1qevTzh5jOKklKL5vEB6T4m+HlTSlCpQuI5urVR16qwo1YSyoya7k9jz3O74EFjgAAAAAAAAAAAAAAAAAAAAAAAAABqOF2i53mj7u0puMZ16UqUZTyoJyWMvCzjyAUd8wd/31Z76vwAPmDv8Avqy31fgAv/Rlu6VvRpSacqdOEG1zNxik2vBsAorSnEZfVrivWVzZpVak6iTdXKUpOST7Tn2gYvzB3/fVnvq/ABc/ADQVTR2i7ayqyhOpR5RSlTzqPWqzmsZSfNJdwCBcZXFVd6U0jO7o17anTcIQUarnr5isN9rFr1gRX5g7/vqz31fgAn3FLxe3Gh6t1OvVoVVXjCMeRc8pxcm860V0gWUAAAAAAAAAAAAAAAAAAAAAAA4zmopybSSWW3sSS522Bg9m7Xvm39LD3nr4LeGvq08nZu175t/SQ946dvB1aeTs3a982/pIe8dO3g6tPJ2bte+bf0kPeOnbwdWnk7N2vfNv6SHvHTt4OrTydm7Xvm39JD3jp28HVp5Ozdr3zb+kh7x07eDq08nZu175t/SQ946dvB1aeTs3a982/pIe8dO3g6tPJ2bte+bf0kPeOnbwdWnk7N2vfNv6SHvHTt4OrTydm7Xvm39JD3jp28HVp5Ozdr3zb+kh7x07eDq08nZu175t/Sw94+C3g6tPLItb2lVzyVSnU1frcnJTxnmzjmMTEx3eq2i3aWQYegAAAAAAAAAAAAAAAAAAdF7S16VSHWhKO9NHqs6tEvN/bLzfFbEdTHZyM933BnTGzA0bMDRswNGzA0bMDQYGgwZ1BswNQbMDUGzBjUGzA9DZgaNrW4naWLW5n1qyj5sIv9xScyn7kR+l7yuPtz/VgFctAAAAAAAAAAAAAAAAAAAfGgx+HnK/p6latDqTnHdJo6nFO6RP6cnljWSY/boNjUBkDAAABlILGhB0oNwi3jnaTZrnu12mdu/+Gh1IeajDG5P4aHUh5qBuT+Gh1Ieagbk/hodSHmoG5P4aHUh5qBuUcuca88bFl4xsWMmyGxb/ABU0tXRql16tSW7Ef2lBzCfvS6Pl0awxKZEJPAAAAAAAAAAAAAAAAAAAA8+8KKWpf3keitU3OTa/U6XhZ3irP6ctxVdZrNYSEd9jFvmTfiWTzNojuzFZns5cjLqy3M89Wnl66d/ByMurLcx1aeTp38HIy6stzHVp5OnfwcjLqy3MdWnk6d/EpHYU5clT7WXN0M1zkpvu12xX32lkcnLoe5mOpTyx0r+JOTl0Pcx1KeTpX8ScnLoe5jqU8nSv4kcGudPczMXrPaWJx2iNzDienhFJPLbNrcu/i5p6uirb8SnLfORznGW3ms6bgq6w1SUjJYAAAAAAAAAAAAAAAAAAAFF8YFLV0rdruOUZLy04t+vJ0XAzvDDmuPjWeyPEtDS3ixq4v5R69Ke9OL/TJA5hH29/tYct11dT4Wtkovilf/DUyNyfDUyNyfDUyPik+GGdRXaobPhhzwY2z8MGBs+GBobPhhH+HE8WU11pQX5s+wl8F65YV/MtRglWlZ4jJ9Cf6F7+XNR3RU2tq/8AgjS1NHWcf/DTb8bim/WzmOIneW0/t1XDRrFWP025pbwAAAAAAAAAAAAAAAAAAAKY40qerpOT61OnL9V7C95dO8X+ue5lGsyIlgr254H6QhbX1KtVlq00pqbw5YTg0tkU29uCLxeOb45iEng8sY8sWnssf5caO74foq3wFN/xZvC7+YYfJ8uNHd8P0Vb4B/xZvB8ww+T5caO74foq/wAA/wCLN4P+/D5cocNtHyajGvKUnsSjRruTfQkobTE8JljvDMcdimdRKV2ddSpxktZJrK1oyg/NksojTGpS4ncbdrqx6f1DLg7mPT6mBxd7T63qfuDG0U4daSpTowpQmpTU1JxWcpJSW3eiw4HFaL/FMKjmmas44pE+u0CvnilU/wDVlzHdQ17oy+Y9z2bo7vRujKerQox6sILdFHK3ndpl1uONUiGSeXsAAAAAAAAAAAAAAAAAAACpeN+ni8oT61HHljOXxIuuWT9Ex+1HzWPrrP6QQs1UADAzdGaJuLmWrQpTqPuuK7ReOT2LeasmemOPqltx4L5J+mE30RxZy2Su6uO7ydHa/E5tfovKV2XmX4pH/wBWeLlf/slMdHaFt7VYoUow6Zc8345PayuyZ73n6pWePh8eONVhuaS7SPiNTc6q7UU3JpJc7bwl42ZiJn0ebWisblG9JcJ6EMqnmtL8OyHnd3yZJmLgr29Z9Fdn5ljp6V9ZRi/05Xq5TlqR6tPZvfOyxxcLjp+FRn4/Lk9N6a0koUsTSssUZ+HC9aPUd2a92itqetUhDrSjHe0jN51WZSMcbtD0gkcq62H0MgAAAAAAAAAAAAAAAAAAAVlxx0dtnPwVYf4P2FryyfW0KfmtfSsq2LhTOdGGtKMc41mll8yy8ZPNp1G2axudLX0LwBs6OJV9e5mu5PEaWfBBPb5Wyiy8fkv6V9IX+Hl2Ovrb1lMLeVOnFQhBQhHYowSjFLoSRCm0zO5lPrWKxqIfZV0+4zD06pSTA43X8RyaVuqOcfWquWz/AOYrbvPdPg39TTljJMfRr/UavuDN9XeatenPoWtNQXiio4RPx8Vhxx6VVeXgeJyz9V2J8h7nr0N8vhNvzGnho+UZfMHyHuOvQ3y+EfMaeD5Rl8w1GmdEztZxp1JQk5R1lqZaxlrbleAk4M8ZY3CFxPCzgtEW/LQaalil42l+r9hJr3aK92Hwco699aR6a1N7pp+w8cTOsVv4l8LX4stY/b0Icy6oAAAAAAAAAAAAAAAAAAAABX/HDT/7W2n0VXHzoSf7Sx5bOsk/xV80j7cf1VReKIUsbejaebesSzWdTEr/AKE9aEZdaKe9ZOWvGrS62k7rEuZ5ewABn2/1UB2AADArnh5UzeJdWEVvbftLnl8fbc3zWd5dfpCdOvtILplncv8AksKq+jt4B09bSlmvxuXmwlL2GjjZ1hlO4GN56r3RzrpgAAAAAAAAAAAAAAAAAAAAEN416Oto3W/l1act+YfuJvL51mhA5lG8KnDoHOvhgS+24wrqEIQVK3ahFRTanlpLGXiXOQLcupaZnaxrzLJWIrp2/OPdfyrbdU+M8fLcfl6+aZPEHzkXX8q23VPjM/LcfmT5pk8Hzj3X8q23VPjHy2nmT5pk8Q3Vnw6uXTg+TobVnYp4/wAjxPLqeZeZ5tkie0O75cXPUobp/EY+X08yx83yeISbgrpepdUp1KihHVnqJQTX3U9uX4SBxOKuK0RC04LibZ6Ta0N2R01WPDGpm/rfh1I/kT9pe8FGsMOW5jO88ofp1/Zrxv8AQm1RKNrxYUdbSlJ9SFSf5dT95D5jOsP+rLlsbzf4uooXRAAAAAAAAAAAAAAAAAAAAAI3xi0tbRVz+FRlunFkng51mqicbG8FlHHSOZALC4O8CrS5s6Fecq6nUjmSjKKjlNp4Tj4Cnz8bkpkmIXPD8BjyY4tLZLi6s+vc+fD4DV8xy/punluLUqtr09Wcovni3Hc8F3Sd1iVFeNWmHE9PKSaP+xp+I1T3a7d2QYeVicAqeLPPWqSe7Ef2lJx0/ddLyuPsJIQ1iqjhFPWvLh/ja3bPYX/CxrFDk+NneeyKacl9JFfhzvb9xMr2aK9kn4oqWb6tLq0mt8o+4ruZz9ER+1vyuPuTK3ClXoAAAAAAAAAAAAAAAAAAAADT8L6eto29XRQqSXjjByX6G3h51lr/AGGjiY3it/JUEdO5UMi3eLupraNpfhlUj+Zv2nP8fGs0uj5fO8MJKQk6VL8JtEV6V1cSlSqKnKpOUZ6rcGnJvOstndOj4bNSaRG3McTgvW8zppMklFSXR/2NPxGuWu3dmULedR4hCU30QTk/Ua7ZK1jcyzTFe8+kLO4LWkqNnShOLjPtm0+dZk2UXE3i+SZh1PBY5x4YrMerbM0JUqf0hPWr1pdM5v8AMzo8UapEOOzzvJaf2jOmX9M/Akvb7SRXsxXsnHE3T+kvZ9EaMd7qN/4oquZz7f8AV1yqPdP8WeVK5AAAAAAAAAAAAAAAAAAAAAYuk6Wvb1oPmnTnHfFo9UnVol4yRukx+nnNcyOprO4cjPd9PTC0OK2rmyqx6taW5wg/1yUfMY+5tf8AK53jmEyK5ZhmJYmI/LV6Q4O2lfLqW9Nyf3orUn50dpupxOSnaWi/C4r94d2jOCVnSjHFPXxzco3NLwYexnq/F5bflppy/DWe2/63tKjGCxGMYroikl6iPNpnumVrWvpDsMPThVliLfQmzMRuXi86rMqZ1s7Xzva/GdJXs4287tMo7pN5rT8ePUb69nuOyyeJ2li3up9apGPkjDP7mUvMrbvEfpfcrrqkysIrVoAAAAAAAAAAAAAAAAAAAAA4yWU107BDEx6PON3DVq1I9Wco7pNHVY53SJclljV5/rqPbw2mheEFxZ63ITSjJ5lGUVKLfNnp3NEfNw9Mvuhvw8TfD7ZSyw4yeZV7fPTKjL9sveQb8t/8ZWOPmn/lCSaP4Y2NbCVZQk/u1k6b3vY95CvweWn4TsfG4r/lvYTUkpRaknzOLyn5URprMJNbRPZsKH1V4jD0xb3S1Cj9pVhF9Gcy81bTZXDe/aGi/E4sfulobzhxRjspQnUfS/o4+vb6iVTgLz7p0gZOa449sbaG/wCF1zVTinGnF7GoLLw/CyZj4HHWdz6q/LzPLf0j0hoCarkYvHmrUf4pfqbY7NsdlucU9PGjnLr1ZvdhewoeYTvM6LlsawpoQVgAAAAAAAAAAAAAAAAAAAAAAeeuEdLUvryPRXq48TqSa9TR03DTvFWf05TiI1ltH7a83tAGQAB32d7VovWo1J0nz9pJxz40uc13xUt3h7plvT2yltPTdzWow5SvUl2qzh6qfj1cZNEcNirPpDOTistvSZY+DbERHZGmZkMsBgcKlWMfrSS8bwZiGdbRio8yb6W2bI7Nq6+LWlq6KtumTqS31Z49WDneNneazpeAjWCEoIqYAAAAAAAAAAAAAAAAAAAAA+AU3w64O3SvrmvG3qSo1Ja8Z01rr6qzlR2rbnnRecHxOOMcVmfVz/G8NknLNoj0Q97G09jWxp86ZYRMT2V0xMdwyAYDDIZEksXijTb2bO6a5a7d3GrpGlH72X0R2mNSfDLDq6Z6kPLL3I9fCz8DDq6QqS+814I9qeoq9RWGLJ91veGWbo/RFxcfYUKtXwxi9XznsW81Xz46e6W2mDJf2wvPgvZyoWNtRmtWdOnFTWU8S7qyvCc7nvF8k2jy6bBSaY61nvENqam4AAAAAAAAAAAAAAAAAAAAAA+AYOkND29x9tRpVPDKKcvI+c2Uy3p7Zar4aX90ItpLiztKmeRlVt33NvKw3S2+sl05jlr39UPJy3Fb2+iLaS4tbynl0pU7hdEXyU35JPH5iZTmVLe6NIOTlmSvtnaL3+iri3eK1GrS8M4tR8kuZ7ybTPS/tnaFfBenuhhGxqlycm8Jt4XN4B6DlQoynLVhGU5PmjBOcn5EebXrWPqnT1Wk2n0hItHcBL+tj6HkYv71aSh+VZl6iLk4/DX87TMfL81vxr+pTo3isgsO4uJT/DRjqLzpZb3IhX5nafbGk3Hyuse6Uq0bwQsbfDhbwcl96rmrLfLOCHfist+8puPhMNO1W8jHCwti8BoSIjT6GQAAAAAAAAAAAAAAAAAAAAAAAAAAAHGUU000mnzp7UGJiJ7tFpLgdY18udvCMn96l9FLx9rzm+nFZadpR8nCYb94YVhxeWFJ5lCdZ8/00srxYjhM2X47Nb86a6cBhr+NpJaWdOjHVpU4U49FOKivURrWm3rMpVaVr6RDIPL2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z">
+                </figure></br>
+                <p id="texto2">El nombre hojas de estilo en cascada viene del inglés Cascading Style Sheets, del que toma sus siglas. CSS es un
+                lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML (y por extensión en
+                XHTML). El W3C(World Wide Web Consortium) es el encargado de formular la especificación de las hojas de estilo que
+                servirán de estándar para los agentes de usuario o navegadores.</br></br>
+                La idea que se encuentra detrás del desarrollo de CSS es separar la estructura de un documento de su presentación.
+                La información de estilo puede ser adjuntada como un documento separado o en el mismo documento HTML. En este último
+                caso podrían definirse estilos generales en la cabecera del documento o en cada etiqueta particular mediante el atributo _style_.</p></br></br>
+            <p id="texto2"> El CSS sirve para definir la estética de un sitio web en un documento externo y eso mismo permite que modificando ese
+                documento (la hoja CSS) podamos cambiar la estética entera de un sitio web, el mismo sitio web puede variar totalmente
+                de estética cambiando solo la CSS, sin tocar para nada los documentos HTML o jsp o asp que lo componen.
+                CSS es un lenguaje utilizado para dar estética a un documento HTML (colores, tamaños de las fuentes, tamaños de
+                elemento, con css podemos establecer diferentes reglas que indicarán como debe presentarse un documento. Podemos indicar
+                propiedades como el color, el tamaño de la letra, el tipo de letra, si es negrita, si es itálica, también se puede dar
+                forma a otras cosas que no sean letras, como colores de fondo de una pagina, tamaños de un elemento (por ejemplo el alto
+                y el ancho de una tabla. </p></br>
+                <h5>
+                    <p>JAVA SCRIPT</p></br>
+                    <figure id="figura"> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEX33x4AAAD/5h+OgBH64h7/6B94bA5dVAv64R7NuRnXwhr23h5mXAzeyBt7bw9fVgtJQgnp0xy5pxZyZw6/rBfEsRiWhxJRSQqpmBTw2R2FeBDo0RyhkROcjRPUvxqThRI6NAcdGgOyoRWLfhE0LwYSEAJMRQlWTgo/OQgwKwYYFgNrYQ0hHgQ4MwcxLQYsJwUKCQA6yu78AAAG50lEQVR4nO2caVvbOhBGbUWiymIg+x6I2xAoofD/f921gZQknrElx45E73u+9cFxdWyto5GDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwaCmE2iOElK4LRPBVwAOMCqqFktHgrj/+s16vd6+P26tGvAoSzbqLbIdYbn9k2E6KSylVtNiGWR6WLSH0BUpuirgiShn+FEU/a0/uqR++sxl1lT+OtGEj31C071i9D67n6kIChZQwlGJZ4Jcym3rSHu0NRfTLQDCh6cdrtDZUEzO/9C5eKNoa0tczdKQHHY6lobixEAzDsXavaGcoOlaCiWLRsFM/Vobq2lIwqajO26KNoYitBZPJg2tFC0M9LyEYhgPHFdXCUN2WMgy7bnsbc0PZKycYjt3WUwvDdUnDMHZaT40NS7/ChKkDsb8YG6rH0oKzb2GoI97gqT+7+9nn5uO/Wt+jHYoRI7CZdJVIUdMe1dkuXUc1jA2ZoeI6+ApZSJVpqw9z59M2U8MpLbg8roFievwgYg+iGYaGskkKPp82MS0fvv7amTp/gYG5Ib3unWZekW6v938cePACA2NDMaMuuyZ6yX2nex18rziN6FOXDSgJsUj+svMkSBMYGyoq+BtGZDVM5gYNj8L7poY/qMvmpKFurbx5gYG5IRm+oA0DD4IzB5i2w2fqsqFXKgymhmSEZuHDeFfEWaPFo0/tjcPUkN6qaPrTZbKYzmkGpOEu8L8lGhpyy8OxRwMfg/EanzYMX9wvjwowNVRjRjHsme36O8N4Bczvio5XXjtWEacJOy2PHc1jbU85iuF46K2jsaEo2Pt9igOvkkz+Yh7zZiI1h7/q+vgizQ1FUYZJQqfpOnaYxWb/sNgwGR9j4dkAaWFouEG6WbS9crR5h8o0TaHhRRjxE6t9/PbGUDEcBd44WhnKvGH/hNiXscMy22RornjvSTzKNmPIQjHst30YOqyzvugNDJrN0IPXaJ25J6LfFo7X7jPb7LMvddsmt+3WeZppmRxhiwTMpKZ2v8ke8PGP5uyKnyByq1jKMNBqYNEameD/hShnmAz+0iTZ+4NNdiP1gpQ1TBP2ufSMDLcup3DlDZPf6sXOTNFlCuY5hsmvZc8sVarlrrc5zzDNoWmRG28nPLqrp+capo7dRrEiueV/Ec43TA+x6UlurDHh3llLrMIwvY0YFmQQO9uIq8gwrayr3KMKfVcvsTLD9xOJeXPyduVlN6NCw3Qyt+JPfbmqppUapif32H619D3PpGLDZGnFxTm2jhpi5YaBWDGK/4whGxt3lM9egyG3I75y09XUYSjppugoR8zaUOriga1NGsb1vkPu+dGpsXecoVbN16vCLoNO7Df4jEF5pODCQXRa5YgxVPP08sKxm96k4m5aBWp1HzIvUTxQhaEftwg+hvO3ov+PztWsz1C009TJO7puCaosYY8wlKq3j68VHX2lc6aXNRnK/fBEJmXrLmlI1EPVOohXjPIV9Zt5xTgbFe1bPXnQkTlzl3kaYnrc58Z5iprevRnWYSjaB5mvE6JUdEcTnlwl5eL0ijxF5jhtq/rxUKrj+VM24MUcXn49ulCr4Wv2mgWrqJhZW+V+BxV0T2YfiHmFRz2JmtPr2r6ma51idhjXVc+8ZZBNzV6fJINym0iHGer6J31Ncjcql02yG1NX1XalWvXIvInDZFCpuK2HwzkyPbZ9sG2qo3wELVVEHj15/68r7Wh0xG1/PQyCzyOf7ZiNOBw+bZ2bz7ZeRvr9G19SCiW6cc6uW7WLJ8FWrYTb2WjU6OdE44/rE3s+9pPfD7PlJI4njZuXvMtuKm6GxYmEOZyM98Lwm0L5VD0aiswAZs7upCyyVYHgrvIpmzDc9yLInPU553HtqbafSWEO7pqQvZlxyh5LHXtPijypZAB1XEv/OdOwlv1Dkdu1sbxSZdFd46xEknq++sUsjIpYkfNjWe7rO5/UtY9fqg9kFsqJ4rq04K62XAyrRMIP+G9zyWnpj5vUmBVlrXif87A1HZYr5KnWzDZ2D4HmsZ1bnazy2faMaz6iKLsWdeumKFVSzMkQUx5cu64OTZ/gpVgWF0Z/xduMeLnI13eyS326MJFRYWzy2cLJhU7QSDUsHPzfYuPCCB0XpZZ83HJ5wZMlUjTZpXfKS6xtCiPFqvADip2hvOyutlbdCVNZH+8i6yNnUojmjF02bjqTqYNTbFqq6XD0fLSo2mxnva4qd/RDCtUdLvunj+3HLG5pd4f03j+gPm2tmoNer9maJ/8QZ+XS6/R+QbRqDpMbDpI7qnPvWA1avlPZF0iS++lq7wgAAAAAAAAA4P/Ff/0ZVyq/bZRoAAAAAElFTkSuQmCC">
+                    </figure></br>
+                    <p id="texto2">JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se
+                    define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.</br></br>
+                    
+                    Se utiliza principalmente del lado del cliente, implementado como parte de un navegador web permitiendo mejoras en la
+                    interfaz de usuario y páginas web dinámicas​ y JavaScript del lado del servidor (Server-side JavaScript o SSJS). Su uso
+                    en aplicaciones externas a la web, por ejemplo en documentos PDF, aplicaciones de escritorio (mayoritariamente widgets)
+                    es también significativo.</br></br>
+                    
+                    Desde 2012, todos los navegadores modernos soportan completamente ECMAScript 5.1, una versión de JavaScript. Los
+                    navegadores más antiguos soportan por lo menos ECMAScript 3. La sexta edición se liberó en julio de 2015.</br></br>
+                    
+                    JavaScript se diseñó con una sintaxis similar a C [cita requerida], aunque adopta nombres y convenciones del lenguaje de
+                    programación Java. Sin embargo, Java y JavaScript tienen semánticas y propósitos diferentes.
+                    </p></br>
+                    <p id="texto2">Todos los navegadores modernos interpretan el código JavaScript integrado en las páginas web. Para interactuar con una
+                    página web se provee al lenguaje JavaScript de una implementación del Document Object Model (DOM).
+                    
+                    Tradicionalmente se venía utilizando en páginas web HTML para realizar operaciones y únicamente en el marco de la
+                    aplicación cliente, sin acceso a funciones del servidor. Actualmente es ampliamente utilizado para enviar y recibir
+                    información del servidor junto con ayuda de otras tecnologías como AJAX. JavaScript se interpreta en el agente de
+                    usuario al mismo tiempo que las sentencias van descargándose junto con el código HTML.
+                    
+                    Desde el lanzamiento en junio de 1997 del estándar ECMAScript 1, han existido las versiones 2, 3 y 5, que es la más
+                    usada actualmente (la 4 se abandonó​). En junio de 2015 se cerró y publicó la versión ECMAScript 6.</p></br></br>
+                </h5>
+                <h6><p style="font-size: 30px">SOFTWARE REQUERIDO PARA PROGRAMAR CARRO INTELIGENTE</p></br></h6>
+                <h7>
+                    <p>IDE ARDUINO</p></br>
+                    <figure id="figura"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu-US-q6S9rUD9YM8TBu8jnJI3H-C0XS7UPA&usqp=CAU">
+                    </figure></br>
+                    <p id="texto2">Arduino es una compañía de desarrollo de software y hardware libres, así como una comunidad internacional que diseña y
+                    manufactura placas de desarrollo de hardware para construir dispositivos digitales y dispositivos interactivos que
+                    puedan detectar y controlar objetos del mundo real. Arduino se enfoca en acercar y facilitar el uso de la electrónica y
+                    programación de sistemas embebidos en proyectos multidisciplinarios. Los productos que vende la compañía son
+                    distribuidos como Hardware y Software Libre, bajo la Licencia Pública General de GNU (GPL) y la Licencia Pública General
+                    Reducida de GNU (LGPL),1​ permitiendo la manufactura de las placas Arduino y distribución del software por cualquier
+                    individuo. Las placas Arduino están disponibles comercialmente en forma de placas ensambladas o también en forma de
+                    kits, hazlo tu mismo (del inglés DIY: "Do It Yourself").
+                    </p></br>
+                    <p id="texto2">Los diseños de las placas Arduino usan diversos microcontroladores y microprocesadores. Generalmente el hardware
+                    consiste de un microcontrolador Atmel AVR, conectado bajo la configuración de "sistema mínimo" sobre una placa de
+                    circuito impreso a la que se le pueden conectar placas de expansión (shields) a través de la disposición de los puertos
+                    de entrada y salida presentes en la placa seleccionada. Las shields complementan la funcionalidad del modelo de placa
+                    empleada, agregando circuiteria, sensores y módulos de comunicación externos a la placa original. </br></br>La mayoría de las
+                    placas Arduino pueden ser alimentadas por un puerto USB o un puerto barrel Jack de 2.5mm. La mayoría de las placas
+                    Arduino pueden ser programadas a través del puerto serie que incorporan haciendo uso del Bootloader que traen programado
+                    por defecto. El software de Arduino consiste de dos elementos: un entorno de desarrollo (IDE) (basado en el entorno de
+                    processing y en la estructura del lenguaje de programación Wiring), y en el cargador de arranque (bootloader, por su
+                    traducción al inglés) que es ejecutado de forma automática dentro del microcontrolador en cuanto este se enciende. Las
+                    placas Arduino se programan mediante un computador, usando comunicación serie.</p></br>
+                </h7>
+                <h8>
+                    <P>PHYTON</P></br>
+                    <figure id="figura"> <img
+                            src="data:image/png;base64,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">
+                    </figure></br>
+                    <p id="texto2">Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.​ Se
+                    trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en
+                    menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.
+                    Es administrado por la Python Software Foundation. Posee una licencia de código abierto, denominada Python Software
+                    Foundation License.</p></br>
+                    <p id="texto2">Python es un lenguaje de scripting independiente de plataforma y orientado a objetos, preparado para realizar cualquier
+                    tipo de programa, desde aplicaciones Windows a servidores de red o incluso, páginas web. Es un lenguaje interpretado, lo
+                    que significa que no se necesita compilar el código fuente para poder ejecutarlo, lo que ofrece ventajas como la rapidez
+                    de desarrollo e inconvenientes como una menor velocidad.</br></br>
+                    
+                    En los últimos años el lenguaje se ha hecho muy popular, gracias a varias razones como:
+                    La cantidad de librerías que contiene, tipos de datos y funciones incorporadas en el propio lenguaje, que ayudan a
+                    realizar muchas tareas habituales sin necesidad de tener que programarlas desde cero.
+                    La sencillez y velocidad con la que se crean los programas. Un programa en Python puede tener de 3 a 5 líneas de código
+                    menos que su equivalente en Java o C.
+                    La cantidad de plataformas en las que podemos desarrollar, como Unix, Windows, OS/2, Mac, Amiga y otros.
+                    Además, Python es gratuito, incluso para propósitos empresariales.</p></br>
+                </h8>
+            </article>
+            <footer id="pie">
+                <small id="derechos">
+                    <p id="small">Derechos reservados</p>
+                    <p id="small">Tecnológico Nacional de México TECNM</p>
+                    <p id="small">Instituto Tecnológico de Puebla ITP</p>
+                </small>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>
